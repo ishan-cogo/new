@@ -16,5 +16,5 @@ def fun(arr)
   end
 end
 
-# arr=[2,4,2,1,1,5,2,3,4]
-# fun(arr)
+arr=[1,2,-1,1,1,5,2,3,4]
+fun(arr)

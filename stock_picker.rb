@@ -1,8 +1,8 @@
 def fun(n,arr)
   mi=arr[0]
   mi_ind=0;
-  buy_d=0
-  sell_d=0
+  buy_d=-1
+  sell_d=-1
   pr=0
   for i in 0..n-1
     if(arr[i]-mi>pr)
@@ -15,10 +15,10 @@ def fun(n,arr)
       mi_ind=i;
     end
   end
-  puts(buy_d+1)
-  puts(sell_d+1)
+    puts(buy_d)
+    puts(sell_d)
 end
 
-# n=10
-# arr=[3,2,1,4,5,6,7,1,8,9]
-# fun(n,arr)
+n=10
+arr=[10,12,20,21,2,5,2,2,3,100]
+fun(n,arr)
