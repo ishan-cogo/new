@@ -1,6 +1,4 @@
 def fun(s,dictionary)
-  arr=s.split()
-  n=arr.length()
   mp=Hash.new
   dictionary.each do |word|
     if s.downcase.include?(word)
