@@ -2,7 +2,7 @@ def fun(s,dictionary)
   mp=Hash.new
   dictionary.each do |word|
     if s.downcase.include?(word)
-      mp[word]=s.scan(word).size
+      mp[word]=s.downcase.scan(word).size
     end
   end
   puts(mp)
